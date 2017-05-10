@@ -25,7 +25,9 @@ SECRET_KEY = 'aic8b3%@psgz(+995p(qv)cwldg8=62c*&g4%qyng&=+=qb3qt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['khya8056.pythonanywhere.com']
+ALLOWED_HOSTS = []
+
+
 # Application definition
 
 INSTALLED_APPS = [

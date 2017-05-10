@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^beam$', views.beam, name='beam'),
     url(r'^vault$', views.vault, name='vault'),
     url(r'^floor$', views.floor, name='floor'),
+    url(r'^extra$', views.extra, name='extra'),
 ]

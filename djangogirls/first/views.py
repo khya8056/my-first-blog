@@ -19,3 +19,5 @@ def beam(request):
 
 def vault(request):
     return render(request,'first/vault.html')
+def extra(request):
+    return render(request,'first/extra.html')

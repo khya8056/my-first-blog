@@ -2,47 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gymnastics</title>
-
-
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Vaulting Horse</title>
+</head>
+
 <style>
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-  }
-
-
-.carousel-caption{
-	height:40%;
-	width:100%;
-    max-width: 100%;
-	left:0px;
+    body{
+    color:white;
+	background-image:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.2)),url("https://typeset-beta.imgix.net/2016%2F7%2F9%2F542890180.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	margin-top:150px;
 }
 
-.button{
-	background:rgba(255, 165, 0,0.7);
-	z-index:0px;
-	color:white;
-	font-size:120%;
-	padding-left:2%;
-	padding-right:2%;
-	padding-bottom:1%;
-	padding-top:1%;
-	transition: all .5s;
-	border-color:orange;
-	border: 1px solid orange;
+.par1{
+	font-size:150%;
+	font-family:'Pacifico',cursive;
+	position:relative;
+	z-index:0;
+	opacity:.6;
 }
-
-
-.button:hover, .button:active{
-    box-shadow: 10px 10px 5px grey;
-	opacity:1.0;
+.par2{
+    text-align:center;
+    margin-left:15%;
+    width:70%;
+    opacity:.6;
+	font-size:180%;
+	font-family:'Pacifico',cursive;
+	position:relative;
+	z-index:0;
 }
 
 .par{
@@ -51,45 +43,6 @@
 	font-family:'Pacifico',cursive;
 	position:relative;
 	z-index:0;
-}
-
-.par1{
-	text-align:center;
-	width:70%;
-	margin-left:15%;
-	font-size:150%;
-	font-family:'Pacifico',cursive;
-	position:relative;
-	z-index:0;
-}
-
-.ie1{
-	background-image:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.2)),url("http://bgcgym.com/wp-content/uploads/2016/02/image3.jpg");
-	background-repeat: no-repeat;
-	background-size:100% 100%;
-}
-
-.ie2{
-	background-image:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.2)),url("https://www.gymnastics.org.au/images/national/WAG%20NCC.jpg");
-	background-repeat: no-repeat;
-	background-size:100% 100%;
-}
-
-.ie3{
-	background-image:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.2)),url("http://www.slate.com/content/dam/slate/articles/arts/music_box/2016/08/160810_MUS_%20evolution-of-gymnastics.jpg.CROP.promo-xlarge2.jpg");
-	background-repeat: no-repeat;
-	background-size:100% 100%;
-}
-
-.ie4{
-	background-image:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.2)),url("https://typeset-beta.imgix.net/2016%2F7%2F9%2F542890180.jpg");
-	background-repeat: no-repeat;
-	background-size:100% 100%;
-}
-
-
-body{
-	margin-top:120px;
 }
 
 .header{
@@ -142,7 +95,7 @@ body{
 	padding-left:10px;
 }
 .second{
-	font-size:50px;
+	font-size:170%;
 	display:inline;
 }
 .third{
@@ -250,6 +203,17 @@ ul.topnav li.icon {display: none;}
 }
 
 @media screen and (max-width:680px) {
+
+    .par1{
+        font-size:50%;
+    }
+    .par{
+        font-size:130%;
+    }
+    .par2{
+        font-size:110%;
+    }
+
   ul.topnav.responsive {position: relative;}
   ul.topnav.responsive li.icon {
     position: absolute;
@@ -265,9 +229,17 @@ ul.topnav li.icon {display: none;}
     text-align: left;
   }
 }
-
 @media screen and (max-width:720px) {
-	body{margin-top:55px;}
+	body{margin-top:110px;}
+    .par1{
+        font-size:100%;
+    }
+    .par{
+        font-size:140%;
+    }
+    .par2{
+        font-size:130%;
+    }
 
 	.whole{height:55px}
 
@@ -287,7 +259,7 @@ ul.topnav li.icon {display: none;}
 		width:33%;
 	}
 	.second{
-		font-size:25px;
+		font-size:150%;
 	}
 	.third{
 		margin-top:5px;
@@ -300,77 +272,31 @@ ul.topnav li.icon {display: none;}
 	}
 }
 
+@media screen and (max-width:550px) {
+	body{margin-top:110px;}
+    .par1{
+        font-size:70%;
+    }
+    .par{
+        font-size:140%;
+    }
+    .par2{
+        font-size:130%;
+    }
+}
 @media (max-width : 480px) {
 
-	body{margin-top:45px;}
+	body{margin-top:105px;}
 
-	.whole{height:45px}
-
-	.img1{
-	height:25px;
-	width:25px;
-	}
-
-	.img2{
-	height:25px;
-	width:25px;
-	}
-
-	#profile{
-	margin-top:5px;
-	font-size:10px;
-	padding:0px;
-	}
-
-	.first{
-		margin-top:5px;
-		padding-left:1px;
-		width:30%;
-	}
-	.second{
-		font-size:17px;
-	}
-	.third{
-		margin-top:5px;
-		padding-right:1px;
-	}
-}
-
-@media screen and (min-width:720px) {
-
-
-	.whole{height:80px}
-
-	.img1{
-		height:60px;
-		width:60px;
-	}
-
-	.img2{
-		height:60px;
-		width:60px;
-	}
-
-	.first{
-		margin-top:10x;
-		padding-left:10px;
-		width:40%;
-	}
-	.second{
-		font-size:45px;
-	}
-	.third{
-		margin-top:10px;
-		padding-right:10px;
-	}
-
-
-	#profile{
-	margin-top:10px;
-	font-size:20px;
-	}
-}
-
+    .par1{
+        font-size:50%;
+    }
+    .par{
+        font-size:80%;
+    }
+    .par2{
+        font-size:60%;
+    }
 
 </style>
 
@@ -411,7 +337,7 @@ $(document).ready(function(){
     <div class="col-xs-4">
     </div>
 
-<div class=" col-xs-4 second" align="center" ><a href="{% url 'home:index' %}" class="potter"><button type="button" id="PotterHead" class="second">Women Gymnastics</button></a></div>
+<div class=" col-xs-4 second" align="center" ><a href="{% url 'home:index' %}" class="potter"><button type="button" id="PotterHead" class="second">Gymnastics</button></a></div>
 	<div class="col-xs-4 third" align="center">
 
 	</div>
@@ -419,7 +345,7 @@ $(document).ready(function(){
 </div>
 <div class="nav">
 <ul class="topnav" id="myTopnav">
-<div class="col-sm-9 col-md-8">
+<div class="col-sm-12 col-md-8">
 	<li><a  href="{% url 'home:bar' %}" class="ab ">Uneven Bar</a></li>
 	<li><a href="{% url 'home:beam' %}" class="ab">Balancing Beam</a></li>
 	<li><a href="{% url 'home:floor' %}" class="ab">Floor Exercise</a></li>
@@ -432,14 +358,6 @@ $(document).ready(function(){
 <script>
 function myFunction() {
     var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-function myFunction() {
-    var x = document.getElementById("Topnavbar");
     if (x.className === "topnav") {
         x.className += " responsive";
     } else {
