@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Vaulting Horse</title>
+</head>
+
+<style>
+    body{
+    color:white;
+	background-image:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.2)),url("https://typeset-beta.imgix.net/2016%2F7%2F9%2F542890180.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	margin-top:150px;
+}
+
+.header{
+	top:0px;
+	position:fixed;
+	width:100%;
+	z-index:60;
+}
+
+.whole{
+	z-index:60;
+	background-color:#008ae6;
+	color:white;
+	font-family:'Pacifico',cursive;
+	height:80px;
+	width:100%;
+}
+#PotterHead1{
+	background-color:#008ae6;
+	padding: 3px 3px 3px 3px;
+	border: 1px solid #008ae6;
+	color:white;
+}
+#PotterHead{
+	background-color:#008ae6;
+	padding: 3px 3px 3px 3px;
+	border: 1px solid #008ae6;
+	color:white;
+}
+
+#PotterHead:hover{
+	text-decoration:none;
+	text-shadow: 7px 7px 10px grey;
+}
+
+.img1{
+	height:50px;
+	width:50px;
+}
+
+.img2{
+	height:50px;
+	width:50px;
+}
+
+.first{
+	float:left;
+	width:36%;
+	margin-top:10px;
+	padding-left:10px;
+}
+.second{
+	font-size:50px;
+	display:inline;
+}
+.third{
+	float:right;
+	margin-top:10px;
+	padding-right:10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+	background-color:#008ae6;
+	padding-left:5px;
+	height:45px;
+}
+
+#profile{
+	font-size:20px;
+	background-color:#008ae6;
+	border:none;
+}
+#profile:hover{
+	text-decoration:none;
+	text-shadow: 15px 15px 25px grey;
+}
+
+#profile:hover, #profile:active ,#profile:visited, #profile:link{text-decoration:none;outline:0;}
+
+.dropdown-menu{
+	font-family:"serif";
+    display: none;
+    position: absolute;
+    background-color: #e6f2ff;
+    min-width: 160px;
+}
+
+.dropdown-menu a:hover{
+	background-color:#142a52;
+	color:white;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.icon {display: none;}
+
+.push{
+	position:relative;
+	bottom:0px;
+	width:100%;
+	height:110px;
+	background-color:#142a52;
+}
+.ab{color:black;}
+a:hover,a:active,a:visited,a:link{outline:0;text-decoration:none}
+#profile:hover, #profile:active ,#profile:visited, #profile:link{text-decoration:none;outline:0;}
+
+.end{
+text-align:center;
+font-size:20px;
+font-family:cursive;
+}
+.end:hover{background-color:#008ae6;}
+.ab:hover{color:white;}
+
+.content {
+  margin-top:11%;
+  margin-bottom:0px;
+  min-height:100%;
+}
+
+ul.topnav {
+    padding: 0;
+    overflow: hidden;
+    background-color: #142a52;
+}
+
+ul.topnav li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+ul.topnav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #386694;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width:720px) {
+	body{margin-top:55px;}
+
+	.whole{height:55px}
+
+	.img1{
+	height:40px;
+	width:40px;
+	}
+
+	.img2{
+	height:40px;
+	width:40px;
+	}
+
+	.first{
+		margin-top:5px;
+		padding-left:1px;
+		width:33%;
+	}
+	.second{
+		font-size:25px;
+	}
+	.third{
+		margin-top:5px;
+		padding-right:1px;
+	}
+
+	#profile{
+	margin-top:5px;
+	font-size:20px;
+	}
+}
+
+@media (max-width : 480px) {
+
+	body{margin-top:45px;}
+
+	.whole{height:45px}
+
+	.img1{
+	height:25px;
+	width:25px;
+	}
+
+	.img2{
+	height:25px;
+	width:25px;
+	}
+
+	#profile{
+	margin-top:5px;
+	font-size:10px;
+	padding:0px;
+	}
+
+	.first{
+		margin-top:5px;
+		padding-left:1px;
+		width:30%;
+	}
+	.second{
+		font-size:17px;
+	}
+	.third{
+		margin-top:5px;
+		padding-right:1px;
+	}
+}
+
+@media screen and (min-width:720px) {
+
+
+	.whole{height:80px}
+
+	.img1{
+		height:60px;
+		width:60px;
+	}
+
+	.img2{
+		height:60px;
+		width:60px;
+	}
+
+	.first{
+		margin-top:10x;
+		padding-left:10px;
+		width:40%;
+	}
+	.second{
+		font-size:45px;
+	}
+	.third{
+		margin-top:10px;
+		padding-right:10px;
+	}
+
+
+	#profile{
+	margin-top:10px;
+	font-size:20px;
+	}
+}
+
+
+.par1{
+	font-size:150%;
+	font-family:'Pacifico',cursive;
+	position:relative;
+	z-index:0;
+	opacity:.6;
+}
+.par2{
+    text-align:center;
+    margin-left:15%;
+    width:70%;
+    opacity:.6;
+	font-size:180%;
+	font-family:'Pacifico',cursive;
+	position:relative;
+	z-index:0;
+}
+
+.par{
+	text-align:center;
+	font-size:230%;
+	font-family:'Pacifico',cursive;
+	position:relative;
+	z-index:0;
+}
+
+</style>
+
+
+<body>
+<div class="header">
+<div class="whole">
+<div class="row">
+    <div class="col-xs-4">
+    </div>
+
+<div class=" col-xs-4 second" align="center" ><a href="{% url 'home:index' %}" class="potter"><button type="button" id="PotterHead" class="second">Women Gymnastics</button></a></div>
+	<div class="col-xs-4 third" align="center">
+		<div class="dropdown" >
+		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="profile">Profile
+		<span class="caret"></span></button>
+		  <ul class="dropdown-menu">
+			<li><a href="">Login</a></li>
+		  </ul>
+		</div>
+	</div>
+</div>
+</div>
+<div class="nav">
+<ul class="topnav" id="myTopnav">
+<div class="col-sm-9 col-md-8">
+	<li><a  href="{% url 'home:bar' %}" class="ab ">Uneven Bar</a></li>
+	<li><a href="{% url 'home:beam' %}" class="ab">Balancing Beam</a></li>
+	<li><a href="{% url 'home:floor' %}" class="ab">Floor Exercise</a></li>
+	<li><a href="{% url 'home:vault' %}" class="ab">Vaulting Horse</a></li>
+	<li class="icon">    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a></li>
+</div>
+</ul>
+</div>
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+function myFunction() {
+    var x = document.getElementById("Topnavbar");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<div class="container">
+     <p class="par">Vaulting Horse</p>
+<p class="par1">In artistic gymnastics, both men and women compete in the vault. It is an explosive event that lasts only a few seconds: A gymnast runs full speed to a table perched at the end of a runway, then springs off the apparatus in a graceful, yet powerful combination of flips and twists, before landing (hopefully upright) on the mat. It is a thrilling and exciting spectator event and the dynamic athleticism required makes it a favorite among gymnasts, as well.
+<br>In order to truly appreciate the vault, you need to understand all the rules and requirements of the event. Below are some facts about the vault, a description of the skills performed, and an explanation of how the event is judged.
+    <br><p class="par">Vaulting Table</p><br>
+<p class="par1">Prior to 2001, the vault (also known as the “horse”) was a cylindrical shaped apparatus that was placed widthwise for women and lengthwise for men. It looked similar to the pommel horse without pommels. However, the narrow width of the apparatus made it difficult for gymnasts, both men and women, to get a firm hand placement on the vault and this presented a safety issue. Throughout the 1990’s the vault was blamed for many serious accidents including the paralysis of the Chinese gymnast, Sang Lan in the 1998 Goodwill games. In the 2000 Olympics, the horse was positioned too low and many gymnasts rammed into the vault or had difficulty completing their tricks.
+<br>After the 2000 Olympics fiasco, the International Federation of Gymnastics (FIG) re-examined the safety of the apparatus and decided to switch to an alternate piece of equipment: the vaulting table. Today, the table serves as the apparatus for both men and women.
+</p><br>
+    <p class="par">    Dimensions</p>
+<p class="par1">The table is approximately 4 feet long and 3 feet wide. Although the table always remains the same shape, different height adjustments are required for both men and women: For men, the height is 4 feet-5 inches (135 centimeters); for women, the height is 4 feet-3 inches (125cm). The surface is covered in a soft, slip resistant padding. A mat, measuring 6 meters long and 2.5 meters wide, must lie behind the table, where the gymnasts land.
+<br>The runway leading up to the table is 25m long, 100cm wide and 2.5cm high. Gymnasts run down this narrow runway with full force and bounce off a vaulting board (springboard) that propels them onto the table. The board is 120cm long, 60cm wide and 20cm high.
+</p><br>
+    <p class="par">Vaulting Categories</p>
+ <p class="par1">The three most common types of vaults are the handspring vault, Tsukahara, and Yurchenko.
+<br>Here is a description of each:
+<br>Handspring vaults: In this category, gymnasts run down the runway, jump onto the board with their feet and land on the vault with their hands. Once they push off from their hands, they are able to perform a wide range of maneuvers, from a simple front handspring to a complex front handspring double tuck with a full twist.
+<br>Tsukahara: In the Tsukahara, like the front handspring, gymnasts set up by running down the runway and jumping onto the vaulting board with their feet. However, before their hands touch the table, the gymnasts perform a half-twist. Once they spring off the vault, they execute a series of somersaults (saltos) and twists. Generally, the more saltos and twists, the higher the score.
+<br>Yurchenko: During this vault, a gymnast will run down the runway, perform a round-off onto the vaulting board (similar to a cartwheel, but faster and landing with two feet) and exit the board via a back handspring. They approach the table from this back handspring: hands land on the table and the gymnast pushes off with her arms. As with the other styles, multiple flips and twists are performed off the vault.
+
+ </p><br>
+    <p class="par">What Judges Look For</p>
+ <p class="par1">Although the vault only lasts a matter of seconds, it is of equal scoring value to every other event in competition.
+<br>In individual competition, athletes perform two vaults from one of the three different categories. The two scores are then averaged. Usually elite gymnasts choose the highest degree of difficulty to increase their score, but difficulty alone will not always provide a high score, as the entire vault from start to finish is evaluated.
+<br>There are five elements that judges look for in a vault:
+<br>Run: A gymnast is watched from the moment he or she stands at the back of the runway and solutes to the judges. The run is a fast acceleration down the runway that culminates with either a hurdle or a round-off onto the springboard. A gymnast will try to gain as much speed as she can in the run in order to have momentum and power to perform her vault.
+<br>Springboard: Judges closely evaluate the gymnast’s form as they move off the springboard and onto the table. They look for tight body positioning in the air, with legs and arms straight and toes pointed. This shows that the gymnast is in control of the vault.
+<br>Table: In order for a gymnast to powerfully execute his or her vault, they need a strong push off the table. The strength should come from their momentum, a solid shoulder push, and good tight form.
+<br>Flight: This is the term used for the gymnast’s exit from the table, where flips and twists are performed in the air. Judges look for the correct position (tuck, pike, or layout), good tight form with toes pointed, and control of the movement. In addition, judges want to see good height off the table with the gymnasts landing a good distance away from the vault.
+<br>Landing: In order to score high, gymnast’s must stick their landing—no movement of the feet, once they touch the mat. If the judges detect any step or bobble on the landing, they will deduct points from the vault. The gymnast must also land within a designated boundary from the table which is marked clearly on the mat.
+ </p>
+
+</div>
+
+
+<div class="push">
+	<div class="end"><a  href="" class="ab">About</a></div>
+	<div class="end"><a href="  " class="ab">Faqs</a></div>
+	<div class="end"><a href=" " class="ab">Terms and Conditions</a></div>
+</div>
+
+</body>
+</html>

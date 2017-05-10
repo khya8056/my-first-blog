@@ -6,4 +6,16 @@ from django.views.generic import View
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("<h1>This is khyati</h1>")
+    return render(request,'first/index.html')
+
+def bar(request):
+    return render(request,'first/bar.html')
+
+def floor(request):
+    return render(request,'first/floor.html')
+
+def beam(request):
+    return render(request,'first/beam.html')
+
+def vault(request):
+    return render(request,'first/vault.html')

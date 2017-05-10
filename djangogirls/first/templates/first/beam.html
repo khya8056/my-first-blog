@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Balancing Beam</title>
+</head>
+
+<style>
+    body{
+    color:white;
+    background-image:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.2)),url("https://www.gymnastics.org.au/images/national/WAG%20NCC.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	margin-top:150px;
+}
+
+.header{
+	top:0px;
+	position:fixed;
+	width:100%;
+	z-index:60;
+}
+
+.whole{
+	z-index:60;
+	background-color:#008ae6;
+	color:white;
+	font-family:'Pacifico',cursive;
+	height:80px;
+	width:100%;
+}
+#PotterHead1{
+	background-color:#008ae6;
+	padding: 3px 3px 3px 3px;
+	border: 1px solid #008ae6;
+	color:white;
+}
+#PotterHead{
+	background-color:#008ae6;
+	padding: 3px 3px 3px 3px;
+	border: 1px solid #008ae6;
+	color:white;
+}
+
+#PotterHead:hover{
+	text-decoration:none;
+	text-shadow: 7px 7px 10px grey;
+}
+
+.img1{
+	height:50px;
+	width:50px;
+}
+
+.img2{
+	height:50px;
+	width:50px;
+}
+
+.first{
+	float:left;
+	width:36%;
+	margin-top:10px;
+	padding-left:10px;
+}
+.second{
+	font-size:50px;
+	display:inline;
+}
+.third{
+	float:right;
+	margin-top:10px;
+	padding-right:10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+	background-color:#008ae6;
+	padding-left:5px;
+	height:45px;
+}
+
+#profile{
+	font-size:20px;
+	background-color:#008ae6;
+	border:none;
+}
+#profile:hover{
+	text-decoration:none;
+	text-shadow: 15px 15px 25px grey;
+}
+
+#profile:hover, #profile:active ,#profile:visited, #profile:link{text-decoration:none;outline:0;}
+
+.dropdown-menu{
+	font-family:"serif";
+    display: none;
+    position: absolute;
+    background-color: #e6f2ff;
+    min-width: 160px;
+}
+
+.dropdown-menu a:hover{
+	background-color:#142a52;
+	color:white;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.icon {display: none;}
+
+.push{
+	position:relative;
+	bottom:0px;
+	width:100%;
+	height:110px;
+	background-color:#142a52;
+}
+.ab{color:black;}
+a:hover,a:active,a:visited,a:link{outline:0;text-decoration:none}
+#profile:hover, #profile:active ,#profile:visited, #profile:link{text-decoration:none;outline:0;}
+
+.end{
+text-align:center;
+font-size:20px;
+font-family:cursive;
+}
+.end:hover{background-color:#008ae6;}
+.ab:hover{color:white;}
+
+.content {
+  margin-top:11%;
+  margin-bottom:0px;
+  min-height:100%;
+}
+
+ul.topnav {
+    padding: 0;
+    overflow: hidden;
+    background-color: #142a52;
+}
+
+ul.topnav li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+ul.topnav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #386694;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width:720px) {
+	body{margin-top:55px;}
+
+	.whole{height:55px}
+
+	.img1{
+	height:40px;
+	width:40px;
+	}
+
+	.img2{
+	height:40px;
+	width:40px;
+	}
+
+	.first{
+		margin-top:5px;
+		padding-left:1px;
+		width:33%;
+	}
+	.second{
+		font-size:25px;
+	}
+	.third{
+		margin-top:5px;
+		padding-right:1px;
+	}
+
+	#profile{
+	margin-top:5px;
+	font-size:20px;
+	}
+}
+
+@media (max-width : 480px) {
+
+	body{margin-top:45px;}
+
+	.whole{height:45px}
+
+	.img1{
+	height:25px;
+	width:25px;
+	}
+
+	.img2{
+	height:25px;
+	width:25px;
+	}
+
+	#profile{
+	margin-top:5px;
+	font-size:10px;
+	padding:0px;
+	}
+
+	.first{
+		margin-top:5px;
+		padding-left:1px;
+		width:30%;
+	}
+	.second{
+		font-size:17px;
+	}
+	.third{
+		margin-top:5px;
+		padding-right:1px;
+	}
+}
+
+@media screen and (min-width:720px) {
+
+
+	.whole{height:80px}
+
+	.img1{
+		height:60px;
+		width:60px;
+	}
+
+	.img2{
+		height:60px;
+		width:60px;
+	}
+
+	.first{
+		margin-top:10x;
+		padding-left:10px;
+		width:40%;
+	}
+	.second{
+		font-size:45px;
+	}
+	.third{
+		margin-top:10px;
+		padding-right:10px;
+	}
+
+
+	#profile{
+	margin-top:10px;
+	font-size:20px;
+	}
+}
+
+
+.par1{
+	font-size:150%;
+	font-family:'Pacifico',cursive;
+	position:relative;
+	z-index:0;
+	opacity:.6;
+}
+.par2{
+    text-align:center;
+    margin-left:15%;
+    width:70%;
+    opacity:.6;
+	font-size:180%;
+	font-family:'Pacifico',cursive;
+	position:relative;
+	z-index:0;
+}
+
+.par{
+	text-align:center;
+	font-size:230%;
+	font-family:'Pacifico',cursive;
+	position:relative;
+	z-index:0;
+}
+
+</style>
+
+
+<body>
+<div class="header">
+<div class="whole">
+<div class="row">
+    <div class="col-xs-4">
+    </div>
+
+<div class=" col-xs-4 second" align="center" ><a href="{% url 'home:index' %}" class="potter"><button type="button" id="PotterHead" class="second">Women Gymnastics</button></a></div>
+	<div class="col-xs-4 third" align="center">
+		<div class="dropdown" >
+		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="profile">Profile
+		<span class="caret"></span></button>
+		  <ul class="dropdown-menu">
+			<li><a href="">Login</a></li>
+		  </ul>
+		</div>
+	</div>
+</div>
+</div>
+<div class="nav">
+<ul class="topnav" id="myTopnav">
+<div class="col-sm-9 col-md-8">
+	<li><a  href="{% url 'home:bar' %}" class="ab ">Uneven Bar</a></li>
+	<li><a href="{% url 'home:beam' %}" class="ab">Balancing Beam</a></li>
+	<li><a href="{% url 'home:floor' %}" class="ab">Floor Exercise</a></li>
+	<li><a href="{% url 'home:vault' %}" class="ab">Vaulting Horse</a></li>
+	<li class="icon">    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a></li>
+</div>
+</ul>
+</div>
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+function myFunction() {
+    var x = document.getElementById("Topnavbar");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<div class="container">
+    <p class="par">Balancing Beam</p>
+    <p class="par2">
+The balance beam is a women’s only event in artistic gymnastics. It is a popular event that is sure to raise the blood pressure of all who watch it being performed, as girls execute multiple spins, flips and leaps across a four inch wide apparatus. Although often a favorite for gymnastics fans, the beam it is not necessarily a favorite among gymnasts—it is difficult to perform such complex skills on such a narrow piece of equipment, where even the slightest bobble can take you out of medal contention.
+To better understand how to approach the balance beam, it is important to know its history, the rules and regulations of the event, as well as the specific elements that make up a successful routine.
+
+
+</p><br>
+    <p class="par"> History</p><br>
+<p class="par1">The first mention of a balance beam-like skill was in the book, Gymnastics for the Youth, by Johan Christoph GutsMuths in the early 1800’s. GutsMuths dedicated one chapter of his book to maintaining balance on a horizontal round pine tree log.
+<br>By the 1830’s, gymnasts used either a fir or pine tree as a balance beam. The apparatus was no longer circular in shape, but cut 10-inches wide by approximately 40-feet long and placed between two posts. In a matter of decades, the balance beam was used around the world.
+<br>However, it did not become a part of competitive gymnastics until 1934, when Hungarian gymnast Gabi Muzaros performed the splits across the 8cm wide apparatus at the World Championships in Budapest. The skill was received with such awe, that the beam instantly became a stable in international gymnastics routines.
+<br>As tumbling skills progressed, the balance beam itself changed too. The beam was widened from 8cm to 10cm, the edges were rounded, and in 1974, soft suede padding was added to the apparatus. The padding provided a safe foot stand on the beam as well as a softer landing for difficult tumbling elements such as flips and handsprings.
+    <br></p>
+<p class="par">Dimensions</p>
+<p class="par1">Today, the balance beam used in competition must conform to certain standards. The International Federation of Gymnastics (FIG) requires that each beam is supported by an elastic overlay with a cushioning that is between 15mm and 30mm thick. The ends of the five-meter long beam must have rounded edges and the beam itself is required to stand 1.2m off the ground. In addition the beam must have a landing mat at the end that measures 17m by 4m.
+</p>
+    <p class="par">Routine Requirements</p>
+<p class="par1">Certain elements are required within a competitive balance beam routine. Each routine needs to last at least 60-seconds, but cannot exceed more than 90-seconds. A gymnast must use the entire length of the beam and perform multiple acrobatic elements.
+<br>In lower level competitions (competitive levels 4-7), routines are predesigned and every gymnast must compete the same series of skills. At the elite level, gymnasts get to choose their own routine, but must still include a sequence of required elements.
+<br>Here are some of those skills:
+<br>Acrobatic or gymnastics series: This can include elements such as a back handspring followed by a back salto (flip), or a turn followed by a leap.
+<br>360-degree turn: The gymnast must complete a 360-degree turn on one foot.
+<br>180-degree forward split: This element is completed during a jump or leap.
+<br>Each element is ranked in difficulty from “A” easiest (back walkover) to “E” hardest (back full). Gymnasts may add more challenging skills to their routine or link difficult elements together to increase their chances for a high score.
+    <br></p>
+    <p class="par">Judge Evaluation</p>
+<p class="par1">Judges evaluate the entire beam routine, from the moment the gymnast salutes until the moment her feet land in the dismount. Judges want to see poise and grace combined with balance, coordination and skill. Good body posture and tight form are also highly valued.
+<br>Judges keep track of the required elements and deduct points if those elements are not present. If a gymnast falls from the beam, it is an automatic one point deduction. If more difficult elements are combined together in a series, judges will award points accordingly – as long as the execution of the tricks is done well.
+<br>The last (and very important) element a judge is looking for is a stuck landing. After the dismount, which should include multiple flips and twists in order to score high, the feet must stay firmly planted on the ground. If there is any bobble, or any movement of the feet, the judges will deduct points.
+</p>
+</div>
+
+
+<div class="push">
+	<div class="end"><a  href="" class="ab">About</a></div>
+	<div class="end"><a href="  " class="ab">Faqs</a></div>
+	<div class="end"><a href=" " class="ab">Terms and Conditions</a></div>
+</div>
+
+</body>
+</html>

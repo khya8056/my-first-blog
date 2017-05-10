@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Floor Exercise</title>
+</head>
+
+<style>
+    body{
+    color:white;
+	background-image:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.2)),url("http://www.slate.com/content/dam/slate/articles/arts/music_box/2016/08/160810_MUS_%20evolution-of-gymnastics.jpg.CROP.promo-xlarge2.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	margin-top:150px;
+}
+
+.header{
+	top:0px;
+	position:fixed;
+	width:100%;
+	z-index:60;
+}
+
+.whole{
+	z-index:60;
+	background-color:#008ae6;
+	color:white;
+	font-family:'Pacifico',cursive;
+	height:80px;
+	width:100%;
+}
+#PotterHead1{
+	background-color:#008ae6;
+	padding: 3px 3px 3px 3px;
+	border: 1px solid #008ae6;
+	color:white;
+}
+#PotterHead{
+	background-color:#008ae6;
+	padding: 3px 3px 3px 3px;
+	border: 1px solid #008ae6;
+	color:white;
+}
+
+#PotterHead:hover{
+	text-decoration:none;
+	text-shadow: 7px 7px 10px grey;
+}
+
+.img1{
+	height:50px;
+	width:50px;
+}
+
+.img2{
+	height:50px;
+	width:50px;
+}
+
+.first{
+	float:left;
+	width:36%;
+	margin-top:10px;
+	padding-left:10px;
+}
+.second{
+	font-size:50px;
+	display:inline;
+}
+.third{
+	float:right;
+	margin-top:10px;
+	padding-right:10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+	background-color:#008ae6;
+	padding-left:5px;
+	height:45px;
+}
+
+#profile{
+	font-size:20px;
+	background-color:#008ae6;
+	border:none;
+}
+#profile:hover{
+	text-decoration:none;
+	text-shadow: 15px 15px 25px grey;
+}
+
+#profile:hover, #profile:active ,#profile:visited, #profile:link{text-decoration:none;outline:0;}
+
+.dropdown-menu{
+	font-family:"serif";
+    display: none;
+    position: absolute;
+    background-color: #e6f2ff;
+    min-width: 160px;
+}
+
+.dropdown-menu a:hover{
+	background-color:#142a52;
+	color:white;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.icon {display: none;}
+
+.push{
+	position:relative;
+	bottom:0px;
+	width:100%;
+	height:110px;
+	background-color:#142a52;
+}
+.ab{color:black;}
+a:hover,a:active,a:visited,a:link{outline:0;text-decoration:none}
+#profile:hover, #profile:active ,#profile:visited, #profile:link{text-decoration:none;outline:0;}
+
+.end{
+text-align:center;
+font-size:20px;
+font-family:cursive;
+}
+.end:hover{background-color:#008ae6;}
+.ab:hover{color:white;}
+
+.content {
+  margin-top:11%;
+  margin-bottom:0px;
+  min-height:100%;
+}
+
+ul.topnav {
+    padding: 0;
+    overflow: hidden;
+    background-color: #142a52;
+}
+
+ul.topnav li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+ul.topnav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #386694;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width:720px) {
+	body{margin-top:55px;}
+
+	.whole{height:55px}
+
+	.img1{
+	height:40px;
+	width:40px;
+	}
+
+	.img2{
+	height:40px;
+	width:40px;
+	}
+
+	.first{
+		margin-top:5px;
+		padding-left:1px;
+		width:33%;
+	}
+	.second{
+		font-size:25px;
+	}
+	.third{
+		margin-top:5px;
+		padding-right:1px;
+	}
+
+	#profile{
+	margin-top:5px;
+	font-size:20px;
+	}
+}
+
+@media (max-width : 480px) {
+
+	body{margin-top:45px;}
+
+	.whole{height:45px}
+
+	.img1{
+	height:25px;
+	width:25px;
+	}
+
+	.img2{
+	height:25px;
+	width:25px;
+	}
+
+	#profile{
+	margin-top:5px;
+	font-size:10px;
+	padding:0px;
+	}
+
+	.first{
+		margin-top:5px;
+		padding-left:1px;
+		width:30%;
+	}
+	.second{
+		font-size:17px;
+	}
+	.third{
+		margin-top:5px;
+		padding-right:1px;
+	}
+}
+
+@media screen and (min-width:720px) {
+
+
+	.whole{height:80px}
+
+	.img1{
+		height:60px;
+		width:60px;
+	}
+
+	.img2{
+		height:60px;
+		width:60px;
+	}
+
+	.first{
+		margin-top:10x;
+		padding-left:10px;
+		width:40%;
+	}
+	.second{
+		font-size:45px;
+	}
+	.third{
+		margin-top:10px;
+		padding-right:10px;
+	}
+
+
+	#profile{
+	margin-top:10px;
+	font-size:20px;
+	}
+}
+
+
+.par1{
+	font-size:150%;
+	font-family:'Pacifico',cursive;
+	position:relative;
+	z-index:0;
+	opacity:.6;
+}
+.par2{
+    text-align:center;
+    margin-left:15%;
+    width:70%;
+    opacity:.6;
+	font-size:180%;
+	font-family:'Pacifico',cursive;
+	position:relative;
+	z-index:0;
+}
+
+.par{
+	text-align:center;
+	font-size:230%;
+	font-family:'Pacifico',cursive;
+	position:relative;
+	z-index:0;
+}
+
+</style>
+
+
+<body>
+<div class="header">
+<div class="whole">
+<div class="row">
+    <div class="col-xs-4">
+    </div>
+
+<div class=" col-xs-4 second" align="center" ><a href="{% url 'home:index' %}" class="potter"><button type="button" id="PotterHead" class="second">Women Gymnastics</button></a></div>
+	<div class="col-xs-4 third" align="center">
+		<div class="dropdown" >
+		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="profile">Profile
+		<span class="caret"></span></button>
+		  <ul class="dropdown-menu">
+			<li><a href="">Login</a></li>
+		  </ul>
+		</div>
+	</div>
+</div>
+</div>
+<div class="nav">
+<ul class="topnav" id="myTopnav">
+<div class="col-sm-9 col-md-8">
+	<li><a  href="{% url 'home:bar' %}" class="ab ">Uneven Bar</a></li>
+	<li><a href="{% url 'home:beam' %}" class="ab">Balancing Beam</a></li>
+	<li><a href="{% url 'home:floor' %}" class="ab">Floor Exercise</a></li>
+	<li><a href="{% url 'home:vault' %}" class="ab">Vaulting Horse</a></li>
+	<li class="icon">    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a></li>
+</div>
+</ul>
+</div>
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+function myFunction() {
+    var x = document.getElementById("Topnavbar");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<div class="container">
+     <p class="par">Floor Exercise</p><p class="par1">The floor exercise in gymnastics can easily confuse onlookers. Spectators will often ask gymnasts if they’re supposed to run around the big mat with a ribbon, or if the floor is as bouncy as a trampoline. Ribbons aside (those are reserved for rhythmic gymnastics), the floor exercise is one of gymnastics’ most versatile events. It’s an area for impressive tumbling and high-flying flips. But it’s also an apparatus which shows off the gymnast’s personality and expression.
+    </p><br>
+
+    <p class="par">    On a Floor Far, Far Away...</p>
+<p class="par1">About 2000 years ago, the Greeks invented gymnastics to train their military. The early gymnasts ran, wrestled, and practiced their jumping.
+<br>As the sport evolved through the centuries and joined the Olympics, what is now the floor exercise was a place for group calisthenics. Imagine you and a group of your friends competing together for Olympic glory — outside, no less. By the early 1900s, an indoor floor space was eventually designated for this event — a step up from competing on the lawn!
+</p>
+<p class="par">Solidly Spring Loaded
+</p>
+    <br>
+<p class="par1">Nowadays the floor exercise typically includes a carpet, a layer of foam, plywood, and springs. Standard floors are 40-feet wide by 40-feet long, with a white marking around the perimeter. Both male and female gymnasts compete on the floor exercise, which is one of the six possible events for men and one of four events for women.
+<br>
+Female gymnasts perform routines choreographed to music that can be up to one minute and thirty seconds long. Lyrics are not allowed for the elite athletes you see on TV, although gymnasts are permitted to use music in which vocals serve as an instrument (not singing).
+    <br>When you’re watching your favorite gymnasts, look for:</p><br>
+    <ul><li>A 360-degree turn on one foot.</li>
+        <li>Flips in both directions (forwards and backwards).</li>
+        <li>Multiple flips, as well as multiple twists.</li>
+        <li>A dance passage, which features leaps and jumps connected by running or dance steps.</li>
+        <li>Choreography that utilizes the entire floor space, as well as different levels (forwards, backwards, sideways, low to the floor).</li>
+</ul>
+   <br>
+    <p class="par">Play the Judge</p>
+    <p class="par1">You can expect to see variations on the following skills in routines:</p>
+    <ul>
+        <li>Handstands, cartwheels, and round-offs</li>
+        <li>Forward and backward handsprings</li>
+        <li>Forward and backward flips</li>
+        <li>Pirouettes</li>
+        <li>Leaps and jumps</li>
+    </ul>
+<br><p class="par1">Judges watch for stuck landings at the end of each tumbling pass. If a gymnast steps over the white boundary, they automatically lose one-tenth of a point.
+<br>In some competitions, you’ll see an extra mat on the floor as the athlete lands her tumbling pass. Extra mats are permitted for softer landings, especially for a gymnast with ankle or knee problems. However, the mat needs to be marked with chalk to show the floor boundaries. If it’s not, the gymnast will lose points.
+</p>
+</div>
+
+
+<div class="push">
+	<div class="end"><a  href="" class="ab">About</a></div>
+	<div class="end"><a href="  " class="ab">Faqs</a></div>
+	<div class="end"><a href=" " class="ab">Terms and Conditions</a></div>
+</div>
+
+</body>
+</html>
