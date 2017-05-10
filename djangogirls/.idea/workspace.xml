@@ -27,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/djangogirls/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+            <state relative-caret-position="175">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,7 +61,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="beam.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="beam.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/first/templates/first/beam.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -162,8 +162,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>body</find>
       <find>par</find>
+      <find>body</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -172,7 +172,6 @@
         <option value="$PROJECT_DIR$/djangogirls/urls.py" />
         <option value="$PROJECT_DIR$/djangogirls/templates/home.html" />
         <option value="$PROJECT_DIR$/djangogirls/templates/home/index.html" />
-        <option value="$PROJECT_DIR$/djangogirls/settings.py" />
         <option value="$PROJECT_DIR$/first/views.py" />
         <option value="$PROJECT_DIR$/first/templates/first/index.html" />
         <option value="$PROJECT_DIR$/first/urls.py" />
@@ -180,6 +179,7 @@
         <option value="$PROJECT_DIR$/first/templates/first/bar.html" />
         <option value="$PROJECT_DIR$/first/templates/first/floor.html" />
         <option value="$PROJECT_DIR$/first/templates/first/beam.html" />
+        <option value="$PROJECT_DIR$/djangogirls/settings.py" />
       </list>
     </option>
   </component>
@@ -538,14 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/djangogirls/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/djangogirls/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -678,6 +670,14 @@
           <folding>
             <element signature="n#style#0;n#a#0;n#li#4;n#div#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangogirls/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
